@@ -306,3 +306,8 @@ footer {
 @media (max-width: 768px) {
   .eng-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Четыре карточки услуг: сетка 2 × 2 ===== */
+@media (min-width: 769px) {
+  .eng-grid { grid-template-columns: repeat(2, 1fr); }
+}
