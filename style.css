@@ -293,3 +293,16 @@ footer {
 .offer-more--inline { margin-top: 4px; }
 .doc-card .pay-note a { font-weight: 600; }
 .footer-links { gap: 10px; }
+
+/* ===== Карточки услуг: чёрные, равномерно по ширине ===== */
+.eng-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.eng-card {
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+}
+.eng-card:hover { border-color: #fff; }
+.eng-card:focus-visible { outline-color: var(--text-primary); }
+@media (max-width: 768px) {
+  .eng-grid { grid-template-columns: 1fr; }
+}
